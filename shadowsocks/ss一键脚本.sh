@@ -19,9 +19,9 @@ SS_PASSWORD=`dd if=/dev/urandom bs=32 count=1 | md5sum | cut -c-32`
 SS_PORT=443 #`seq 1025 9000 | grep -v -E "$PORTS_USED" | shuf -n 1`
 
 # get config file
-wget https://raw.githubusercontent.com/shadowsocks/stackscript/master/shadowsocks.json -O /etc/shadowsocks.json
-wget https://raw.githubusercontent.com/shadowsocks/stackscript/master/shadowsocks.conf -O /etc/supervisor/conf.d/shadowsocks.conf
-wget https://raw.githubusercontent.com/shadowsocks/stackscript/master/local.conf -O /etc/sysctl.d/local.conf
+wget https://raw.githubusercontent.com/keysona/my-script/master/shadowsocks/shadowsocks.json -O /etc/shadowsocks.json
+wget https://raw.githubusercontent.com/keysona/my-script/master/shadowsocks/shadowsocks.conf -O /etc/supervisor/conf.d/shadowsocks.conf
+wget https://raw.githubusercontent.com/keysona/my-script/master/shadowsocks/local.conf -O /etc/sysctl.d/local.conf
 
 # optimize shadowsocks
 sysctl --system
