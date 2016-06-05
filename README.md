@@ -1,4 +1,11 @@
 # My scripts.
 
 ## ss-script
-auto install shadowsocks and config to
+
+**Only for debain/ubuntu.**
+
+Support chacha20.
+
+Default port is 443.
+
+Automatically generate password.
