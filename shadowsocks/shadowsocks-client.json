@@ -1,0 +1,8 @@
+{
+    "server":"SS_SERVER_IP",
+    "server_port":SS_PORT,
+    "local_port":1080,
+    "password":"SS_PASSWORD",
+    "timeout":300,
+    "method":"chacha20"
+}
