@@ -10,6 +10,9 @@ apt-get install curl
 curl 'https://raw.githubusercontent.com/keysona/my-script/master/shadowsocks/ss%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC.sh' > /tmp/ss.sh && bash /tmp/ss.sh && rm /tmp/ss.sh
 ```
 
+根据机子的性能，花费的时间3-10分钟。
+digitalocean ubuntu14.04 512mb内存 花费5分钟。
+
 ### 特点:
 - 支持chacha20
 - 默认端口是443
