@@ -4,7 +4,7 @@
 
 仅针对debain/ubuntu，digitalocean的机子测试通过。(ubuntu 14.04/16.04 | debain 7)
 
-如何使用?
+### 如何使用?
 ```shell
 apt-get install curl
 curl 'https://raw.githubusercontent.com/keysona/my-script/master/shadowsocks/ss%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC.sh' > /tmp/ss.sh && bash /tmp/ss.sh && rm /tmp/ss.sh
