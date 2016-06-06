@@ -1,8 +1,8 @@
 # My scripts.
 
-## ss-script
+## ss一键安装脚本
 
-仅针对debain/ubuntu，digitalocean的机子测试通过。(ubuntu 14.04/16.04 | debain 7)
+仅针对debain/ubuntu，digitalocean的机子测试通过。(ubuntu 14.04 | debain 7)
 
 ### 如何使用?
 ```shell
@@ -10,7 +10,7 @@ apt-get install curl
 curl 'https://raw.githubusercontent.com/keysona/my-script/master/shadowsocks/ss%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC.sh' > /tmp/ss.sh && bash /tmp/ss.sh && rm /tmp/ss.sh
 ```
 
-特点:
+### 特点:
 - 支持chacha20
 - 默认端口是443
 - 用supervisor管理,开机/重启自动开启ss
@@ -35,15 +35,17 @@ supervisorctl restart shadowsocks
 ```
 - 已完成内核参数的优化，默认优化算法是针对高延迟地区的hybla
 
-**Only for debain/ubuntu. Test pass in digitalocean(ubuntu 14.04/16.04 | debain 7)**
+## ss-script
 
-**How to use?**
+**Only for debain/ubuntu. Test pass in digitalocean(ubuntu 14.04 | debain 7)**
+
+### How to use?
 
 ```shell
 apt-get install curl
 curl 'https://raw.githubusercontent.com/keysona/my-script/master/shadowsocks/ss%E4%B8%80%E9%94%AE%E8%84%9A%E6%9C%AC.sh' > /tmp/ss.sh && bash /tmp/ss.sh && rm /tmp/ss.sh
 ```
-
+### Features
 - **Support chacha20.**
 - **Default port is 443.**
 - **Automatically generate password.**
