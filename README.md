@@ -67,27 +67,29 @@ curl 'https://raw.githubusercontent.com/keysona/my-script/master/shadowsocks/ss%
 }
 ```
 
-更换内核以支持破解版锐速
+## 替换内核以支持破解版锐速 
 1.安装内核文件：
-
+```
 sudo apt-get install linux-image-extra-3.13.0-29-generic
-
+```
 2.查看当前安装的内核：
-
+```
 dpkg -l|grep linux-image
-
+```
 3.卸载其他内核：
-
+```
 sudo apt-get purge linux-image-3.13.0-xx-generic linux-image-extra-3.13.0-xx-generic
-
+```
 4.更新grub系统引导文件：
-
+```
 sudo update-grub
-
+```
 5.重启系统：
-
+```
 sudo reboot
-
+```
 6.安装破解版锐速
-
-wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh    
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
+```
+所有选项一路回车，选择默认即可。
