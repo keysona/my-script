@@ -26,7 +26,7 @@ supervisorctl restart shadowsocks
 - 自动生成高强度密码，shadowsocks的配置文件在```/etc/shadowsocks.json```
 - 完成后显示相应的配置文件: 服务器ip，端口，密码等。
 ```shell
-# 显示的配置文件
+# 默认单用户配置显示的配置文件
 {
     "server":"100.100.100.100",
     "server_port":443,
@@ -36,6 +36,26 @@ supervisorctl restart shadowsocks
     "method":"chacha20"
 }
 ```
+# 多用户配置文件
+```
+{
+            "server":"0.0.0.0",
+            "local_address":"127.0.0.1",
+            "local_port":1080,
+            "port_password":{
+                               "2333":"fjlag;l556",
+                               "6666":"jgaingga"
+                           },
+              "_comment":{
+                                 "2333":"whouse",
+                                 "6666":"whouse"
+                            },
+            "timeout":300,
+            "method":"chacha20",
+            "fast_open": false
+}
+```
+
 - 已完成内核参数的优化，默认优化算法是针对高延迟地区的hybla
 
 ## ss-script
