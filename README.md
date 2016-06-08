@@ -36,8 +36,9 @@ supervisorctl restart shadowsocks
     "method":"chacha20"
 }
 ```
+
+```shell
 # 多用户配置文件
-```
 {
             "server":"0.0.0.0",
             "local_address":"127.0.0.1",
