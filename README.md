@@ -41,19 +41,17 @@ supervisorctl restart shadowsocks
 # 多用户配置文件
 {
             "server":"0.0.0.0",
-            "local_address":"127.0.0.1",
             "local_port":1080,
             "port_password":{
-                               "2333":"fjlag;l556",
-                               "6666":"jgaingga"
-                           },
-              "_comment":{
-                                 "2333":"whouse",
-                                 "6666":"whouse"
-                            },
+                  "2333":"fjlag;l556",
+                  "6666":"jgainggalagj
+            },
+            "_comment":{
+                  "2333":"whouse",
+                  "6666":"whouse"
+            },
             "timeout":300,
-            "method":"chacha20",
-            "fast_open": false
+            "method":"chacha20"
 }
 ```
 
